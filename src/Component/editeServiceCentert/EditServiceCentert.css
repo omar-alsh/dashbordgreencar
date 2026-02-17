@@ -1,0 +1,112 @@
+.continerEditServiceCentert {
+  /* background: blanchedalmond; */
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.MainBoxFormEditServiceCentert {
+  /* background: black; */
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BoxFormEditServiceCentert {
+  /* background: blue; */
+  width: 65%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.BoxFormEditServiceCentert form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  gap: 10px;
+  padding: 10px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 7px 2px white;
+}
+
+.BoxFormEditServiceCentert form .InputForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.BoxFormEditServiceCentert form input, 
+.BoxFormEditServiceCentert form select {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid var(--mainColor);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background: white;
+  color: black;
+}
+
+.BoxFormEditServiceCentert form label {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+.BoxFormEditServiceCentert form .Add-btn {
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+  background: var(--mainColor);
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.BoxFormEditServiceCentert form .Add-btn:hover {
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  background: white;
+}
+
+
+/* start media */
+
+@media (max-width:600px) {
+  .MainBoxFormEditServiceCentert {
+    width: 100%;
+  }
+
+  .BoxFormEditServiceCentert {
+    width: 100%;
+    /* align-items: center; */
+  }
+  .BoxFormEditServiceCentert form {
+    width: 90%;
+  }
+}
+
+/* end media */

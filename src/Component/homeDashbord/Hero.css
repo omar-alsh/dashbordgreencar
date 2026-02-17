@@ -1,0 +1,192 @@
+.bodyDashBord {
+  background: red;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.bodyDashBord {
+  display: flex;
+}
+
+/* Start SideBar */
+
+.sideBar {
+  /* display: none; */
+  width: 15%;
+  background: white;
+  border-top: 2px solid var(--mainColor);
+  border-right: 2px solid var(--mainColor);
+}
+
+.sideBar .ButtonSideBar {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.sideBar .ButtonSideBar button {
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 5px 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: var(--mainColor);
+  color: white;
+  font-size: 15px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.sideBar .ButtonSideBar button:hover {
+  border: 2px solid var(--mainColor);
+  color: var(--mainColor);
+  background: white;
+}
+
+.sideBar .ButtonSideBar button:nth-child(1) {
+  margin-top: 10px;
+}
+/* End SideBar */
+
+.continerBody {
+  flex: 1;
+  background: white;
+  border-top: 2px solid var(--mainColor);
+  overflow: scroll;
+  background: var(--mainColor);
+}
+
+.continerBody::-webkit-scrollbar {
+  display: none;
+}
+
+.Products {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* start IconSidBar */
+.IconSidBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.IconSidBar button {
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  background: var(--mainColor);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+}
+
+.IconSidBar button:hover {
+  background: white;
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+}
+
+.buttonAddCar {
+  position: relative;
+}
+.addCar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  left: 120%;
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-10px);
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* السهم الصغير */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent #222 transparent transparent;
+}
+
+/* عند الوقوف على الزر */
+.icon-wrapper:hover .tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* end IconSidBar */
+
+/* Satrt media */
+
+@media (max-width: 1024px) {
+  .sideBar {
+    width: 50px;
+    /* display: none; */
+  }
+
+  .sideBar .ButtonSideBar {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .IconSidBar {
+    display: none;
+  }
+}
+/* @media (max-width:600px) {
+  .bodyDashBord {
+    padding-top: 30px;
+  }
+} */
+/* end media */

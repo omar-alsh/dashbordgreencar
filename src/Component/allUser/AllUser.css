@@ -1,0 +1,110 @@
+.continerAllUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: white; */
+}
+
+.UserGrid {
+  width: 75%;
+  margin-top: 20px;
+  /* background: black; */
+}
+
+.CardUser {
+  background: white;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  /*justify-items: center;
+  */
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.CardUser h3,
+.CardUser p {
+  margin: 0 0 8px 0;
+}
+
+.CardUser .infoUser {
+  /* background: green; */
+  width: 85%;
+}
+
+.CardUser .ButtonUser {
+  /* background: red; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ButtonUser .buttonEdit,
+.ButtonUser .buttonDelete {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ButtonUser .buttonDelete {
+  color: red;
+  background: transparent;
+}
+
+.ButtonUser .buttonDelete:hover {
+  border: 1px solid red;
+}
+
+.ButtonUser .buttonEdit {
+  color: var(--mainColor);
+  padding: 0 5px;
+}
+
+.ButtonUser .buttonEdit:hover {
+  border: 1px solid var(--mainColor);
+}
+
+/* start media */
+@media (max-width: 600px) {
+  .continerAllUser {
+    justify-content: start;
+    /* align-items: center; */
+    /* width: 100%; */
+    /* background: red; */
+  }
+  .UserGrid {
+    width: 100%;
+  }
+  .CardUser {
+    margin: 0px 10px 20px 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  .UserGrid {
+    width: 100%;
+  }
+  .CardUser {
+    margin: 0px 10px 20px 10px;
+  }
+}
+
+/* end media */

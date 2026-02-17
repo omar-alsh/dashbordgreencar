@@ -1,0 +1,253 @@
+.continerCategory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: white; */
+}
+
+.CatergoryGrid {
+  width: 75%;
+  margin-top: 20px;
+  /* background: black; */
+}
+
+.CardCategory {
+  background: white;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  /*justify-items: center;
+  */
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.CardCategory h3 {
+  margin: 0 0 8px 0;
+}
+
+.CardCategory .infoCategor {
+  /* background: green; */
+  width: 85%;
+}
+
+.CardCategory .ButtonCategor {
+  /* background: red; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ButtonCategor .buttonEdit,
+.ButtonCategor .buttonDelete {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ButtonCategor .buttonDelete {
+  color: red;
+  background: transparent;
+}
+
+.ButtonCategor .buttonDelete:hover {
+  border: 1px solid red;
+}
+
+.ButtonCategor .buttonEdit {
+  color: var(--mainColor);
+  padding: 0 5px;
+}
+
+.ButtonCategor .buttonEdit:hover {
+  border: 1px solid var(--mainColor);
+}
+
+/*  */
+
+
+.addCategoryForm {
+  /* background: red; */
+  padding-bottom: 10px;
+}
+
+.addCategoryForm h3 {
+  color: white;
+  text-align: center;
+  /* margin-top: 10px; */
+  padding-top: 10px;
+  /* background: black; */
+}
+
+.addCategoryForm form {
+  /* background: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: white; */
+}
+
+.addCategoryForm form input {
+  padding: 10px 20px;
+  width: 90%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.addCategoryForm form .Add-btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid transparent;
+  color: var(--mainColor);
+  font-size: 20px;
+  /* width: 90%; */
+  width: 100px;
+  cursor: pointer;
+}
+
+/* start media */
+@media (max-width: 600px) {
+  .continerCategory {
+    justify-content: start;
+    /* align-items: center; */
+    /* width: 100%; */
+    /* background: red; */
+  }
+  .CatergoryGrid {
+    width: 100%;
+  }
+  .CardCategory {
+    margin: 0px 10px 20px 10px;
+  }
+  .addCategoryForm form {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .CatergoryGrid {
+    width: 100%;
+  }
+  .CardCategory {
+    margin: 0px 10px 20px 10px;
+  }
+  .addCategoryForm {
+    /* justify-content: space-evenly; */
+    margin: 0 10px 0 10px;
+  }
+  .addCategoryForm form input {
+    width: 70%;
+  }
+}
+
+/* end media */
+
+.imagePreviewBox {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* المسافة بين الصورة والأزرار */
+  margin-bottom: 20px;
+  /* background: black; */
+  justify-content: center;
+}
+
+.previewImagec {
+  width: 150px;
+  /*height: 100px;
+  */
+  object-fit: cover;
+  border-radius: 10px;
+  /* border: 2px solid #ccc; */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.imageButtonsc {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 5px;
+}
+.imageButtonsc button {
+  padding: 0;
+}
+.imageButtonsc .deleteImageBtnc {
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+  background: red;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.imageButtonsc .deleteImageBtnc:hover {
+  border: 1px solid red;
+  background: rgb(248, 145, 145);
+}
+
+.editImageBtnc {
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: white;
+  color: var(--mainColor);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  font-size: 15px;
+}
+.editImageBtnc:hover {
+  background: var(--mainColor);
+  color: white;
+}
+.editImageBtnc input {
+  display: none;
+}
