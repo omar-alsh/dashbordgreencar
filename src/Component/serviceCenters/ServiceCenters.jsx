@@ -22,7 +22,7 @@ export default function ServiceCenters() {
     axios
       .get("https://backend-greencar.onrender.com/api/service-centers")
       .then((res) => {
-        console.log("البيانات المستلمة:", res.data); // تأكد من ظهور البيانات في Console المتصفح
+        // console.log("البيانات المستلمة:", res.data); // تأكد من ظهور البيانات في Console المتصفح
         setServiceCenters(res.data);
       })
       .catch((err) => {
