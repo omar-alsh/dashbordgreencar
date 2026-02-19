@@ -70,7 +70,7 @@ const AddUser = () => {
       <div className="continer continerAddUser">
         <div className="MainAddUser">
           <div className="LogoAddUser">
-            <img src="../../../public/green-car-logo.png"></img>
+            <img src="/green-car-logo.png"></img>
             <h2>إضافة مستخدم</h2>
           </div>
           <div className="BoxFormAddUser">

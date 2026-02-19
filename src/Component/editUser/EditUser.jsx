@@ -93,7 +93,7 @@ export default function EditUser() {
       <div className="continer continerEditUser">
         <div className="MainEditUser">
           <div className="LogoEditUser">
-            <img src="../../../public/green-car-logo.png" alt="Logo" />
+            <img src="/green-car-logo.png" alt="Logo" />
             <h3>تعديل مستخدم</h3>
           </div>
 
