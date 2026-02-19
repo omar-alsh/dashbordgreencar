@@ -25,7 +25,7 @@ export default function EditCar() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/cars/${id}`)
+      .get(`https://backend-greencar.onrender.com/api/cars/${id}`)
       .then((res) => setCar(res.data))
       .catch((err) => console.log(err));
   }, [id]);
@@ -113,7 +113,10 @@ export default function EditCar() {
     e.preventDefault();
     console.log("Car sent to backend:", car);
     try {
-      await axios.put(`http://localhost:5000/api/cars/${id}`, car);
+      await axios.put(
+        `https://backend-greencar.onrender.com/api/cars/${id}`,
+        car
+      );
 
       Swal.fire({
         icon: "success",

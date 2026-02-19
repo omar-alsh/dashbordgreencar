@@ -20,7 +20,9 @@ export default function EditUser() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/users/${id}`);
+        const res = await fetch(
+          `https://backend-greencar.onrender.com/api/users/${id}`
+        );
         const data = await res.json();
 
         setForm({
@@ -56,11 +58,14 @@ export default function EditUser() {
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/users/${id}`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(updatedData)
-      });
+      const res = await fetch(
+        `https://backend-greencar.onrender.com/api/users/${id}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(updatedData)
+        }
+      );
 
       if (!res.ok) {
         Swal.fire("خطأ", "تعذر تعديل المستخدم", "error");

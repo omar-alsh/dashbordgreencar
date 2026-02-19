@@ -24,7 +24,7 @@ export default function EditServiceCentert() {
   // جلب بيانات المركز عند التحميل
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/service-centers/${id}`)
+      .get(`https://backend-greencar.onrender.com/service-centers/${id}`)
       .then((res) => {
         setCenterData(res.data);
         setLoading(false);
@@ -91,7 +91,7 @@ export default function EditServiceCentert() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/service-centers/${id}`,
+        `https://backend-greencar.onrender.com/api/service-centers/${id}`,
         centerData
       );
 

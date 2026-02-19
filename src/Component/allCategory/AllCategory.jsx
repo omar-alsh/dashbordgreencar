@@ -17,7 +17,7 @@ export default function Category() {
   // جلب التصنيفات
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/categorys")
+      .get("https://backend-greencar.onrender.com/api/categorys")
       .then((res) => setCategory(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -81,7 +81,7 @@ export default function Category() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/categorys/add",
+        "https://backend-greencar.onrender.com/api/categorys/add",
         newCategory
       );
 
@@ -116,7 +116,7 @@ export default function Category() {
       if (result.isConfirmed) {
         try {
           await axios.delete(
-            `http://localhost:5000/api/Delete/categorys/${id}`
+            `https://backend-greencar.onrender.com/api/Delete/categorys/${id}`
           );
           setCategory((prev) => prev.filter((c) => c._id !== id));
           Swal.fire("تم الحذف!", "تم حذف التصنيف", "success");

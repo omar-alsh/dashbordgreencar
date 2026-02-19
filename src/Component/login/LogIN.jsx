@@ -17,10 +17,13 @@ export default function LogIN() {
     e.preventDefault();
     setLoading(true)
     try {
-      const res = await axios.post("http://localhost:5000/api/login", {
-        email,
-        password
-      });
+      const res = await axios.post(
+        "https://backend-greencar.onrender.com/api/login",
+        {
+          email,
+          password
+        }
+      );
       // حفظ التوكن
       localStorage.setItem("token", res.data.token);
       // الانتقال إلى صفحة الـ Hero

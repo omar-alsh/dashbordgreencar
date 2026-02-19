@@ -14,7 +14,7 @@ export default function AllUser() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/users")
+      .get("https://backend-greencar.onrender.com/api/users")
       .then((res) => setUsers(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -32,7 +32,9 @@ export default function AllUser() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`http://localhost:5000/api/Delete/user/${id}`);
+          await axios.delete(
+            `https://backend-greencar.onrender.com/api/Delete/user/${id}`
+          );
 
           setUsers((prev) => prev.filter((User) => User._id !== id));
 

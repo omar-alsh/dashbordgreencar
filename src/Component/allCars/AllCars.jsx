@@ -12,7 +12,7 @@ export default function AllCars() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/cars")
+      .get("https://backend-greencar.onrender.com/api/cars")
       .then((res) => setCars(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -31,7 +31,9 @@ const deleteCar = async (id) => {
   }).then(async (result) => {
     if (result.isConfirmed) {
       try {
-        await axios.delete(`http://localhost:5000/api/Delete/cars/${id}`);
+        await axios.delete(
+          `https://backend-greencar.onrender.com/api/Delete/cars/${id}`
+        );
 
         setCars((prev) => prev.filter((car) => car._id !== id));
 

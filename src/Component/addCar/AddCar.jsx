@@ -147,7 +147,10 @@ export default function AddCar() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/cars/add", car);
+      await axios.post(
+        "https://backend-greencar.onrender.com/api/cars/add",
+        car
+      );
       Swal.fire({
         icon: "success",
         title: "تمت إضافة السيارة بنجاح",

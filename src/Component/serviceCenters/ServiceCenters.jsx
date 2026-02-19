@@ -20,7 +20,7 @@ export default function ServiceCenters() {
   // جلب جميع المراكز و المتاجر
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/service-centers")
+      .get("https://backend-greencar.onrender.com/api/service-centers")
       .then((res) => setServiceCenters(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -43,7 +43,7 @@ export default function ServiceCenters() {
       if (result.isConfirmed) {
         try {
           await axios.delete(
-            `http://localhost:5000/api/delete/service-centers/${id}`
+            `https://backend-greencar.onrender.com/api/delete/service-centers/${id}`
           );
 
           // تحديث الحالة بعد الحذف
@@ -118,7 +118,7 @@ export default function ServiceCenters() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/add/service-centers",
+        "https://backend-greencar.onrender.com/api/add/service-centers",
         newServiceCenters
       );
 
