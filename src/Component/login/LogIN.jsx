@@ -40,7 +40,7 @@ export default function LogIN() {
       <div className="continer continerLogIN">
         <div className="MainLogIN">
           <div className="LogoLogIN">
-            <img src="../../../public/green-car-logo.png"></img>
+            <img src="/green-car-logo.png"></img>
           </div>
 
           <form onSubmit={handleLogin}>

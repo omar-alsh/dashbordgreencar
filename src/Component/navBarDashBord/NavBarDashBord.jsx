@@ -19,7 +19,7 @@ export default function NavBarDashBord() {
       <div className="continer continerNavBarDashBord">
         <div className="BoxNavBar">
           <div className="LogoNavBar">
-            <img src="../../../public/green-car-logo.png"></img>
+            <img src="/green-car-logo.png"></img>
             <h2>DashBordGreenCar</h2>
             <div>
               <IoReorderThree className="BergarLine" onClick={handeltags} />
