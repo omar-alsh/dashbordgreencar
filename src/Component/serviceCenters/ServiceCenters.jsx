@@ -21,8 +21,14 @@ export default function ServiceCenters() {
   useEffect(() => {
     axios
       .get("https://backend-greencar.onrender.com/api/service-centers")
-      .then((res) => setServiceCenters(res.data))
-      .catch((err) => console.log(err));
+      .then((res) => {
+        console.log("البيانات المستلمة:", res.data); // تأكد من ظهور البيانات في Console المتصفح
+        setServiceCenters(res.data);
+      })
+      .catch((err) => {
+        console.error("خطأ في جلب البيانات:", err);
+        Swal.fire("خطأ", "فشل الاتصال بالسيرفر لجلب البيانات", "error");
+      });
   }, []);
 
   // حذف متجر او مركز
