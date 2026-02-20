@@ -36,7 +36,7 @@ export default function EditServiceCentert() {
       });
   }, [id]);
 
-  // Handle input changes
+  // Handle input chang
   const handleChange = (e) => {
     setCenterData({
       ...centerData,
