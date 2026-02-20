@@ -42,15 +42,16 @@
 /* start showsideBar */
 .tagsTow {
   position: fixed; /* تجعلها فوق المحتوى */
-  top: 85px; /* تبدأ تحت الـ Navbar مثلاً */
+  top: 0px; /* تبدأ تحت الـ Navbar مثلاً */
+  right: 0;
   width: 30%;
-  height: auto; /* لا تأخذ طول الشاشة بالكامل */
+  height: 100vh; /* لا تأخذ طول الشاشة بالكامل */
   background: var(--ColorTow);
   overflow: hidden;
   z-index: 1000; /* فوق بقية العناصر */
   padding: 20px;
   border-radius: 8px;
-  background: linear-gradient(to right, #2b80ff73, #22d3ee);
+  background: var(--mainColor);
   /* height: 100vh; */
 }
 
@@ -64,7 +65,7 @@
 .Closeicon {
   font-size: 20px;
   cursor: pointer;
-  color:white;
+  color: white;
 }
 
 /* أنميشن الفتح */
@@ -81,36 +82,36 @@
 
 @keyframes ShowTags {
   from {
-    transform: translatey(-380px);
-    -webkit-transform: translatey(-380px);
-    -moz-transform: translatey(-380px);
-    -ms-transform: translatey(-380px);
-    -o-transform: translatey(-380px);
-}
+    transform: translateX(230px);
+    -webkit-transform: translateX(230px);
+    -moz-transform: translateX(230px);
+    -ms-transform: translateX(230px);
+    -o-transform: translateX(230px);
+  }
   to {
-    transform: translatey(0px);
-    -webkit-transform: translatey(0px);
-    -moz-transform: translatey(0px);
-    -ms-transform: translatey(0px);
-    -o-transform: translatey(0px);
-}
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
 }
 
 @keyframes HiddinTags {
   from {
-    transform: translatey(0px);
-    -webkit-transform: translatey(0px);
-    -moz-transform: translatey(0px);
-    -ms-transform: translatey(0px);
-    -o-transform: translatey(0px);
-}
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
   to {
-    transform: translatey(-380px);
-    -webkit-transform: translatey(-380px);
-    -moz-transform: translatey(-380px);
-    -ms-transform: translatey(-380px);
-    -o-transform: translatey(-380px);
-}
+    transform: translateX(380px);
+    -webkit-transform: translateX(380px);
+    -moz-transform: translateX(380px);
+    -ms-transform: translateX(380px);
+    -o-transform: translateX(380px);
+  }
 }
 
 .sideBarNavBar {
@@ -126,16 +127,16 @@
 }
 
 .ButtonSideBarNavBar button {
-  width: 100px;
+  width: 115px;
   margin-bottom: 10px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  padding: 5px 0;
+  padding: 5px 0px;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 2px solid white;
   background: var(--mainColor);
   color: white;
   font-size: 15px;
@@ -165,5 +166,12 @@
   }
   .BoxNavBar .LogoNavBar img {
     width: 100px;
+  }
+  .divClosTags {
+    justify-content: end;
+    margin-left: 0;
+  }
+  .Closeicon {
+    font-size: 15px;
   }
 }

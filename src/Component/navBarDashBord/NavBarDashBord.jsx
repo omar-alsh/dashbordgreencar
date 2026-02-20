@@ -44,16 +44,22 @@ export default function NavBarDashBord() {
             <div className="sideBarNavBar">
               <div className="ButtonSideBarNavBar">
                 <Link to="all-cars">
-                  <button>All Car</button>
+                  <button onClick={closeTags}>All Car</button>
                 </Link>
                 <Link to="add-car">
-                  <button>Add Car</button>
+                  <button onClick={closeTags}>Add Car</button>
                 </Link>
                 <Link to="add-user">
-                  <button>Add User</button>
+                  <button onClick={closeTags}>Add User</button>
                 </Link>
                 <Link to="all-user">
-                  <button>All User</button>
+                  <button onClick={closeTags}>All User</button>
+                </Link>
+                <Link to="all-category">
+                  <button onClick={closeTags}>Category</button>
+                </Link>
+                <Link to="service-centers">
+                  <button onClick={closeTags}>ServiceCenters</button>
                 </Link>
               </div>
             </div>
