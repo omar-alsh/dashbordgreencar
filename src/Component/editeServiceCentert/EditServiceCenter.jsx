@@ -24,7 +24,7 @@ export default function EditServiceCentert() {
   // جلب بيانات المركز عند التحميل
   useEffect(() => {
     axios
-      .get(`https://backend-greencar.onrender.com/service-centers/${id}`)
+      .get(`https://backend-greencar.onrender.com/api/service-centers/${id}`)
       .then((res) => {
         setCenterData(res.data);
         setLoading(false);
