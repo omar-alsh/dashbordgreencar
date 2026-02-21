@@ -181,9 +181,14 @@
 }
 
 @media (max-width: 600px) {
+  .carsGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .carCard {
     width: 95%;
-    margin: 10px 5px 5px 5px;
+    /* margin: 10px 5px 5px 5px; */
   }
   .informationCenter1 {
     text-align: center;
