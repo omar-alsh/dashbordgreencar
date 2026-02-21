@@ -229,7 +229,7 @@ export default function AddCar() {
 
   return (
     <div className="addCarContainer">
-      <h2>إضافة سيارة جديدة</h2>
+      <h2 style={{ color: "white" }}>إضافة سيارة جديدة</h2>
 
       <form onSubmit={handleSubmit} className="carForm">
         {/* القسم الأول: معلومات أساسية */}
