@@ -119,7 +119,7 @@ export default function EditServiceCentert() {
   return (
     <div className="Box">
       <div className="continer continerEditServiceCentert">
-        <h2>تعديل بيانات المركز / المتجر</h2>
+        <h2 style={{ color: "white" }}>تعديل بيانات المركز / المتجر</h2>
         <div className="MainBoxFormEditServiceCentert" dir="rtl">
           <div className="BoxFormEditServiceCentert">
             <form onSubmit={handleUpdate}>

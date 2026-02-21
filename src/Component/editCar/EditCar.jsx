@@ -203,7 +203,7 @@ export default function EditCar() {
 
   return (
     <div className="addCarContainer">
-      <h2>تعديل السيارة</h2>
+      <h2 style={{ color: "white" }}>تعديل السيارة</h2>
 
       <form onSubmit={handleSubmit} className="carForm">
         <div className="section">

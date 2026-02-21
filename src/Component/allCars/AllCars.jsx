@@ -50,7 +50,7 @@ const deleteCar = async (id) => {
 
   return (
     <div className="allCarsBox">
-      <h2>جميع السيارات</h2>
+      <h2 style={{ color: "white" }}>جميع السيارات</h2>
       <div className="carsGrid">
         {cars.map((car) => (
           <div key={car._id} className="carCard">
