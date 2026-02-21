@@ -145,9 +145,9 @@ export default function Category() {
                 <p>{c.type}</p>
               </div>
               <div className="ButtonCategor">
-                <Link className="buttonEdit">
+                {/* <Link className="buttonEdit">
                   <FiEdit2 />
-                </Link>
+                </Link> */}
                 <button
                   className="buttonDelete"
                   onClick={() => deleteCategory(c._id)}
