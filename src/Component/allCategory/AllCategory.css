@@ -151,6 +151,10 @@
   }
   .CardCategory {
     margin: 0px 10px 20px 10px;
+    flex-direction: column;
+  }
+  .infoCategor {
+    text-align: center;
   }
   .addCategoryForm form {
     gap: 20px;
