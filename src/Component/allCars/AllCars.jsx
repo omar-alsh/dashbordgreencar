@@ -99,7 +99,7 @@ const deleteCar = async (id) => {
                   اللون:
                 </span>
                 {"\n"}
-                {car.color}
+                <span style={{color:"black", fontWeight:"bold"}}>{car.color}</span>
               </p>
               <p>
                 {car.price}${"\n"}
