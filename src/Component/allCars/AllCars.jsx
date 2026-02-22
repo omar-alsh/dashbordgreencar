@@ -61,20 +61,80 @@ const deleteCar = async (id) => {
               <img src={car.images[0]} width="150px"></img>
             </div>
             <div className="informationCenter1">
-              <p>
+              <p style={{ color: "#3d6650", fontWeight: "bold" }}>
                 {car.categorySlug}-{car.categoryType}
               </p>
-              <p>{car.year}:سنة الصنع</p>
-              <p>{car.mileage}:عداد السيارة</p>
-              <p>{car.fuelType}:نوع الوقود</p>
-              <p>{car.transmission}:ناقل الحركة</p>
-              <p>اللون :{car.color}</p>
-              <p>{car.price}$ :السعر</p>
+              <p>
+                {car.year}
+                {"\n"}
+                <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                  :سنة الصنع
+                </span>
+              </p>
+              <p>
+                {car.mileage}
+                {"\n"}
+                <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                  :عداد السيارة
+                </span>
+              </p>
+              <p>
+                {car.fuelType}
+                {"\n"}
+
+                <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                  :نوع الوقود
+                </span>
+              </p>
+              <p>
+                {car.transmission}
+                {"\n"}
+
+                <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                  :ناقل الحركة
+                </span>
+              </p>
+              <p>
+                <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                  اللون:
+                </span>
+                {"\n"}
+                {car.color}
+              </p>
+              <p>
+                {car.price}${"\n"}
+                <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                  :السعر
+                </span>
+              </p>
               <div className="engine">
-                <h4>:مواصفات المحرك</h4>
-                <div>{car.engine.capacity}:سعة المحرك</div>
-                <div>{car.engine.horsepower}:القدرة الحصانية </div>
-                <div>{car.engine.cylinders}:عدد السطوانات </div>
+                <h4 style={{ color: "#3d6650", fontWeight: "bold" }}>
+                  :مواصفات المحرك
+                </h4>
+                <div>
+                  {car.engine.capacity}
+                  {"\n"}
+
+                  <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                    :سعة المحرك
+                  </span>
+                </div>
+                <div>
+                  {car.engine.horsepower}
+                  {"\n"}
+
+                  <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                    :القدرة الحصانية{" "}
+                  </span>
+                </div>
+                <div>
+                  {car.engine.cylinders}
+                  {"\n"}
+
+                  <span style={{ color: "#02a552", fontWeight: "bold" }}>
+                    :عدد السطوانات
+                  </span>
+                </div>
               </div>
             </div>
             <div className="informationCenter2">
@@ -87,7 +147,9 @@ const deleteCar = async (id) => {
                 ))}</p>
               </div> */}
               <div className="features">
-                <h4>:ميزات السيارة</h4>
+                <h4 style={{ color: "#3d6650", fontWeight: "bold" }}>
+                  :ميزات السيارة
+                </h4>
                 <ul dir="rtl">
                   {car.features.map((fu, index) => (
                     <li key={index}>{fu}</li>
@@ -95,7 +157,9 @@ const deleteCar = async (id) => {
                 </ul>
               </div>
               <div className="status">
-                <h4>:حالة السيارة</h4>
+                <h4 style={{ color: "#3d6650", fontWeight: "bold" }}>
+                  :حالة السيارة
+                </h4>
                 <p>{car.status}</p>
               </div>
             </div>
