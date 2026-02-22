@@ -58,6 +58,7 @@ const deleteCar = async (id) => {
               <h3>
                 {car.brand} - {car.model}
               </h3>
+              <br/>
               <img src={car.images[0]} width="150px"></img>
             </div>
             <div className="informationCenter1">
