@@ -51,11 +51,10 @@ textarea {
   height: 120px;
 }
 
-
 .upload-btn {
   display: inline-block;
   padding: 5px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border-radius: 8px;
   cursor: pointer;
@@ -104,6 +103,11 @@ textarea {
   padding: 8px;
   margin-bottom: 5px;
   border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: start;
+  gap: 10px;
 }
 
 .featuresList button {
@@ -120,13 +124,11 @@ textarea {
   -o-border-radius: 5px;
 }
 
-.featuresList button:hover{
+.featuresList button:hover {
   background: white;
   color: var(--mainColor);
   border: 2px solid var(--mainColor);
 }
-
-
 
 .submitBtn {
   background: #0a7f42;
@@ -184,11 +186,10 @@ textarea {
   .section textarea {
     width: 92%;
   }
-
 }
 
-@media (max-width:600px) {
-    .imagesPreview {
+@media (max-width: 600px) {
+  .imagesPreview {
     display: flex;
     flex-direction: column;
     justify-content: center;

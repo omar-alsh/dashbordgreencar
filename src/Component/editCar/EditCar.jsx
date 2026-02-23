@@ -305,31 +305,8 @@ export default function EditCar() {
             <option value="manual">عادي</option>
           </select>
         </div>
-
-        {/* <div className="section">
-          <h3>الصور</h3>
-
-          <input
-            type="file"
-            accept="image/*"
-            onChange={(e) => uploadImage(e.target.files[0])}
-          />
-
-          <div className="imagesPreview">
-            {car.images.map((img, i) => (
-              <img key={i} src={img} alt="car" />
-            ))}
-          </div>
-        </div> */}
         <div className="section">
           <h3>الصور</h3>
-
-          {/* إضافة صورة جديدة */}
-          {/* <input
-            type="file"
-            accept="image/*"
-            onChange={(e) => uploadImage(e.target.files[0])}
-          /> */}
           <label className="upload-btn">
             اختر صورة
             <input
@@ -371,22 +348,6 @@ export default function EditCar() {
 
         <div className="section">
           <h3>الميزات</h3>
-          {/* <div className="featureInputBox">
-            <input
-              placeholder="أدخل ميزة"
-              value={featureInput}
-              onChange={(e) => setFeatureInput(e.target.value)}
-            />
-            <button type="button" onClick={addFeature}>
-              إضافة
-            </button>
-          </div>
-
-          <ul className="featuresList">
-            {car.features.map((f, i) => (
-              <li key={i}>{f}</li>
-            ))}
-          </ul> */}
           <ul className="featuresList">
             <div className="featureInputBox">
               <input
@@ -460,25 +421,6 @@ export default function EditCar() {
             ))}
           </ul>
         </div>
-        {/* 
-        <div className="section">
-          اختيار التصنيف حسب slug
-          <h3>تصنيف السيارة</h3>
-          <select
-            name="categorySlug"
-            value={car.categorySlug}
-            onChange={handleChange}
-            required
-          >
-            <option value="">اختر التصنيف</option>
-            {categories.map((c) => (
-              <option key={c._id} value={c.slug}>
-                {c.slug}
-              </option>
-            ))}
-          </select>
-        </div> */}
-
         <div className="section">
           <h3>الوصف والحالة</h3>
           <p>:الوصف</p>
