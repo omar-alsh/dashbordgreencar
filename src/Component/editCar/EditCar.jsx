@@ -201,6 +201,32 @@ export default function EditCar() {
     }
   };
 
+  const deleteFeature = (index) => {
+    Swal.fire({
+      title: "هل أنت متأكد؟",
+      text: "سيتم حذف هذه الميزة من القائمة",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "نعم، احذفها",
+      cancelButtonText: "إلغاء"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const updatedFeatures = car.features.filter((_, i) => i !== index);
+        setCar({ ...car, features: updatedFeatures });
+
+        Swal.fire({
+          title: "تم الحذف!",
+          text: "تمت إزالة الميزة بنجاح.",
+          icon: "success",
+          timer: 1500,
+          showConfirmButton: false
+        });
+      }
+    });
+  };
+
   return (
     <div className="addCarContainer">
       <h2 style={{ color: "white" }}>تعديل السيارة</h2>
@@ -412,6 +438,21 @@ export default function EditCar() {
                       style={{ marginLeft: "10px" }}
                     >
                       تعديل
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => deleteFeature(i)}
+                      style={{
+                        marginLeft: "5px",
+                        backgroundColor: "#e74c3c", // لون أحمر متناسق
+                        color: "white",
+                        border: "none",
+                        padding: "3px 8px",
+                        borderRadius: "4px",
+                        cursor: "pointer"
+                      }}
+                    >
+                      حذف نهائي
                     </button>
                   </>
                 )}
