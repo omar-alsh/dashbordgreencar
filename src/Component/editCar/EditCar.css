@@ -1,7 +1,9 @@
 .addCarContainer {
-  width: 90%;
-  margin: auto;
-  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -12,6 +14,7 @@ h2 {
 .carForm {
   display: flex;
   flex-direction: column;
+  width: 90%;
   gap: 25px;
 }
 
