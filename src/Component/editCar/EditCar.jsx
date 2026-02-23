@@ -390,31 +390,33 @@ export default function EditCar() {
                 ) : (
                   <>
                     {f}
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setEditingIndex(i);
-                        setEditingValue(f);
-                      }}
-                      style={{ marginLeft: "10px" }}
-                    >
-                      تعديل
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => deleteFeature(i)}
-                      style={{
-                        marginLeft: "5px",
-                        backgroundColor: "#e74c3c", // لون أحمر متناسق
-                        color: "white",
-                        border: "none",
-                        padding: "3px 8px",
-                        borderRadius: "4px",
-                        cursor: "pointer"
-                      }}
-                    >
-                      حذف نهائي
-                    </button>
+                    <div className="buttonfeaturesList">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setEditingIndex(i);
+                          setEditingValue(f);
+                        }}
+                        style={{ marginLeft: "10px" }}
+                      >
+                        تعديل
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => deleteFeature(i)}
+                        style={{
+                          marginLeft: "5px",
+                          backgroundColor: "#e74c3c", // لون أحمر متناسق
+                          color: "white",
+                          border: "none",
+                          padding: "3px 8px",
+                          borderRadius: "4px",
+                          cursor: "pointer"
+                        }}
+                      >
+                        حذف نهائي
+                      </button>
+                    </div>
                   </>
                 )}
               </li>

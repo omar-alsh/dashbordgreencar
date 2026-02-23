@@ -130,6 +130,10 @@ textarea {
   border: 2px solid var(--mainColor);
 }
 
+.buttonfeaturesList {
+  display: flex;
+}
+
 .submitBtn {
   background: #0a7f42;
   color: white;
